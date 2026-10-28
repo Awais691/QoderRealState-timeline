@@ -1,0 +1,363 @@
+    <section class="hero-home">
+      <div class="hero-home__media">
+        <img src="assets/images/hero/home.jpg" alt="Modern timber-and-glass home at dusk beneath a gum tree" width="2000" height="1333" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero-home__shade"></div>
+
+      <div class="container-haven hero-home__content">
+        <p class="hero-home__kicker">Coastline · City · Countryside</p>
+        <h1 class="h-display hero-home__title">A considered place to <em>begin again.</em></h1>
+        <p class="hero-home__text">Haven Estates represents a small, deliberate collection of homes — places chosen for proportion, light and the life they make possible. Fewer listings, more attention.</p>
+        <div class="hero-home__actions">
+          <a class="btn btn-light" href="buy.html">Explore the collection <span data-icon="arrowRight"></span></a>
+          <a class="btn btn-outline-light" href="contact.html">Speak to an advisor</a>
+        </div>
+      </div>
+
+      <div class="hero-home__aside">
+        <span>Currently representing</span>
+        <p>17 residences across five landscapes</p>
+      </div>
+    </section>
+
+    <div class="hero-search-wrap">
+      <div class="container-haven">
+        <div class="search-panel">
+          <div class="search-tabs" role="tablist" aria-label="Search homes" data-search-tabs>
+            <button class="search-tab" type="button" role="tab" id="search-tab-buy" aria-controls="search-buy" aria-selected="true" data-search-tab="buy">Buy</button>
+            <button class="search-tab" type="button" role="tab" id="search-tab-rent" aria-controls="search-rent" aria-selected="false" data-search-tab="rent" tabindex="-1">Rent</button>
+            <button class="search-tab" type="button" role="tab" id="search-tab-sell" aria-controls="search-sell" aria-selected="false" data-search-tab="sell" tabindex="-1">Sell</button>
+          </div>
+
+          <form class="search-form" id="search-buy" action="buy.html" method="get" role="tabpanel" aria-labelledby="search-tab-buy" data-search-form="buy">
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-buy-location">Location</label>
+              <select class="search-form__control" id="home-buy-location" name="location" data-search-location>
+                <option value="">Any location</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-buy-type">Property type</label>
+              <select class="search-form__control" id="home-buy-type" name="type" data-search-type>
+                <option value="">Any type</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-buy-budget">Budget</label>
+              <select class="search-form__control" id="home-buy-budget" name="max" data-search-price>
+                <option value="">Any budget</option>
+              </select>
+            </div>
+            <button class="btn btn-primary search-form__submit" type="submit">Search homes <span data-icon="search"></span></button>
+          </form>
+
+          <form class="search-form" id="search-rent" action="rent.html" method="get" role="tabpanel" aria-labelledby="search-tab-rent" data-search-form="rent" hidden>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-rent-location">Location</label>
+              <select class="search-form__control" id="home-rent-location" name="location" data-search-location>
+                <option value="">Any location</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-rent-type">Property type</label>
+              <select class="search-form__control" id="home-rent-type" name="type" data-search-type>
+                <option value="">Any type</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-rent-budget">Monthly budget</label>
+              <select class="search-form__control" id="home-rent-budget" name="max" data-search-price>
+                <option value="">Any budget</option>
+              </select>
+            </div>
+            <button class="btn btn-primary search-form__submit" type="submit">Search rentals <span data-icon="search"></span></button>
+          </form>
+
+          <form class="search-form" id="search-sell" action="sell.html" method="get" role="tabpanel" aria-labelledby="search-tab-sell" data-search-form="sell" hidden>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-sell-location">Location</label>
+              <select class="search-form__control" id="home-sell-location" name="location" data-search-location>
+                <option value="">Where is the property?</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-sell-type">Property type</label>
+              <select class="search-form__control" id="home-sell-type" name="propertyType" data-search-type>
+                <option value="">Select a type</option>
+              </select>
+            </div>
+            <div class="search-form__field">
+              <label class="search-form__label" for="home-sell-timeline">Timeline</label>
+              <select class="search-form__control" id="home-sell-timeline" name="timeline">
+                <option value="">When might you sell?</option>
+                <option value="Within 3 months">Within 3 months</option>
+                <option value="3–6 months">3–6 months</option>
+                <option value="6–12 months">6–12 months</option>
+                <option value="Just exploring">Just exploring</option>
+              </select>
+            </div>
+            <button class="btn btn-primary search-form__submit" type="submit">Request a valuation <span data-icon="arrowRight"></span></button>
+          </form>
+
+          <p class="search-form__note">Every property in this demonstration is illustrative. No real availability is represented.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">The current collection</p>
+            <h2 class="h2">Homes with a<br><span class="h-accent">point of view.</span></h2>
+            <p>Three places we are thinking about this week — each chosen for architecture, setting and a certain quality of quiet.</p>
+          </div>
+          <a class="link-arrow" href="buy.html">All homes for sale <span data-icon="arrowRight"></span></a>
+        </div>
+        <div class="property-grid" data-home-featured></div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container-haven">
+        <div class="category-grid">
+          <a class="category-card reveal" href="buy.html?type=Villa">
+            <span class="category-card__icon" data-icon="waves"></span>
+            <h3>Villas &amp; retreats</h3>
+            <p>Space to gather, with the landscape close at hand.</p>
+            <span class="category-card__arrow" data-icon="arrowUpRight"></span>
+          </a>
+          <a class="category-card reveal" href="buy.html?type=Penthouse" data-delay="1">
+            <span class="category-card__icon" data-icon="building"></span>
+            <h3>Penthouses &amp; lofts</h3>
+            <p>City living with light, air and a longer view.</p>
+            <span class="category-card__arrow" data-icon="arrowUpRight"></span>
+          </a>
+          <a class="category-card reveal" href="buy.html?type=House" data-delay="2">
+            <span class="category-card__icon" data-icon="home"></span>
+            <h3>Houses</h3>
+            <p>Thoughtful homes in established neighbourhoods.</p>
+            <span class="category-card__arrow" data-icon="arrowUpRight"></span>
+          </a>
+          <a class="category-card reveal" href="buy.html?type=Cabin" data-delay="3">
+            <span class="category-card__icon" data-icon="leaf"></span>
+            <h3>Cabins &amp; escapes</h3>
+            <p>A shorter distance from the everyday.</p>
+            <span class="category-card__arrow" data-icon="arrowUpRight"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">Where we work</p>
+            <h2 class="h2">Four landscapes,<br>one standard.</h2>
+            <p>From salt air to still water, we stay close to the places we know best.</p>
+          </div>
+          <a class="link-arrow" href="buy.html">Browse by location <span data-icon="arrowRight"></span></a>
+        </div>
+
+        <div class="location-grid">
+          <a class="location-card location-card--wide reveal" href="buy.html?location=Coastline">
+            <img src="assets/images/locations/coast.jpg" alt="Waves breaking on a pale sandy beach at sunset" width="1600" height="1067" loading="lazy" decoding="async">
+            <span class="location-card__shade"></span>
+            <span class="location-card__content">
+              <span class="location-card__count">6 properties</span>
+              <h3 class="location-card__title">Coastline</h3>
+              <span class="location-card__arrow" data-icon="arrowUpRight"></span>
+            </span>
+          </a>
+          <a class="location-card location-card--narrow reveal" href="buy.html?location=City" data-delay="1">
+            <img src="assets/images/locations/city.jpg" alt="Dense city skyline seen from above at golden hour" width="1200" height="900" loading="lazy" decoding="async">
+            <span class="location-card__shade"></span>
+            <span class="location-card__content">
+              <span class="location-card__count">7 properties</span>
+              <h3 class="location-card__title">City</h3>
+              <span class="location-card__arrow" data-icon="arrowUpRight"></span>
+            </span>
+          </a>
+          <a class="location-card location-card--half reveal" href="buy.html?location=Countryside" data-delay="2">
+            <img src="assets/images/locations/country.jpg" alt="Golden field at dusk with distant trees" width="1200" height="900" loading="lazy" decoding="async">
+            <span class="location-card__shade"></span>
+            <span class="location-card__content">
+              <span class="location-card__count">1 property</span>
+              <h3 class="location-card__title">Countryside</h3>
+              <span class="location-card__arrow" data-icon="arrowUpRight"></span>
+            </span>
+          </a>
+          <a class="location-card location-card--wide-bottom reveal" href="buy.html?location=Lakeside" data-delay="3">
+            <img src="assets/images/locations/lake.jpg" alt="Mountain lake with a wooden boathouse and forested shoreline" width="1600" height="1067" loading="lazy" decoding="async">
+            <span class="location-card__shade"></span>
+            <span class="location-card__content">
+              <span class="location-card__count">2 properties</span>
+              <h3 class="location-card__title">Lakeside</h3>
+              <span class="location-card__arrow" data-icon="arrowUpRight"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="intro-split__grid">
+          <div class="intro-split__text reveal">
+            <p class="eyebrow">Why Haven</p>
+            <h2 class="h2">A quieter way<br>to <span class="h-accent">move.</span></h2>
+            <p class="lede">Good representation is not a louder listing. It is better questions, fewer assumptions and a process that leaves room to think.</p>
+            <div class="why-points">
+              <div class="why-point">
+                <span class="why-point__num">01</span>
+                <div>
+                  <h3>One advisor, start to finish</h3>
+                  <p>The person who shows you the house is the person who negotiates it, coordinates it and answers the phone afterwards.</p>
+                </div>
+              </div>
+              <div class="why-point">
+                <span class="why-point__num">02</span>
+                <div>
+                  <h3>A small, edited collection</h3>
+                  <p>We take on a limited number of homes so that each receives real attention — not a place in a crowded feed.</p>
+                </div>
+              </div>
+              <div class="why-point">
+                <span class="why-point__num">03</span>
+                <div>
+                  <h3>Clarity over pressure</h3>
+                  <p>Honest pricing, plain-language documents and time to consider. The right move should feel considered, not hurried.</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-8"><a class="link-arrow" href="about.html">How we work <span data-icon="arrowRight"></span></a></p>
+          </div>
+
+          <div class="frame-image reveal" data-delay="1">
+            <div class="frame-image__media">
+              <img src="assets/images/general/why-haven.jpg" alt="Open-plan dining room with a black table and timber kitchen" width="1400" height="1050" loading="lazy" decoding="async">
+            </div>
+            <div class="frame-image__badge">
+              <strong>1:1</strong>
+              <span>Advisor to client, from first viewing to keys</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-band on-dark">
+      <div class="container-haven stats-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">A small practice</p>
+          <h2 class="h2 mt-4">Numbers we keep<br>deliberately low.</h2>
+          <p class="body-sm mt-4">Illustrative studio figures for this demonstration — not verified business results.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <p class="stat-value"><span data-countup="17">17</span></p>
+            <p class="stat-label">Residences represented</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-value"><span data-countup="6">6</span></p>
+            <p class="stat-label">Specialist advisors</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-value"><span data-countup="5">5</span></p>
+            <p class="stat-label">Landscapes covered</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-value"><span data-countup="96" data-suffix="%">96%</span></p>
+            <p class="stat-label">Clients who would return</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">Client notes</p>
+            <h2 class="h2">The part people<br>remember.</h2>
+          </div>
+          <p class="body-sm">Illustrative testimonials written for this demo. Names and purchases are fictional.</p>
+        </div>
+
+        <div class="testimonial" data-testimonial>
+          <div class="testimonial__mark" aria-hidden="true">“</div>
+          <div class="testimonial-track" data-testimonial-track></div>
+          <div class="testimonial-controls">
+            <button class="carousel-btn" type="button" data-testimonial-prev aria-label="Previous testimonial"><span data-icon="chevronLeft"></span></button>
+            <div class="carousel-dots" data-testimonial-dots role="group" aria-label="Choose testimonial"></div>
+            <button class="carousel-btn" type="button" data-testimonial-next aria-label="Next testimonial"><span data-icon="chevronRight"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">The advisors</p>
+            <h2 class="h2">People who know<br>the <span class="h-accent">place.</span></h2>
+            <p>Six specialists, each with a landscape they know street by street. Every one of them is fictional.</p>
+          </div>
+          <a class="link-arrow" href="agents.html">Meet the team <span data-icon="arrowRight"></span></a>
+        </div>
+        <div class="agent-grid" data-home-agents></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">The journal</p>
+            <h2 class="h2">Notes on living<br>well, thoughtfully.</h2>
+            <p>Practical thinking on buying, selling and the spaces in between.</p>
+          </div>
+          <a class="link-arrow" href="blog.html">Read the journal <span data-icon="arrowRight"></span></a>
+        </div>
+        <div class="post-grid" data-home-posts></div>
+      </div>
+    </section>
+
+    <section class="cta-band on-dark">
+      <div class="container-haven cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Start a conversation</p>
+          <h2 class="h2 mt-4">Tell us what home<br>means to you.</h2>
+          <p>Whether you are buying, selling or simply beginning to look, a short conversation is the best place to start.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-light" href="contact.html">Book a consultation <span data-icon="arrowRight"></span></a>
+          <a class="btn btn-outline-light" href="sell.html">Value my home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="newsletter">
+          <div class="newsletter__grid">
+            <div>
+              <p class="eyebrow eyebrow--light">The Haven letter</p>
+              <h2 class="h2">A monthly note on<br>places worth knowing.</h2>
+              <p>New collections, considered interiors and the occasional market observation. No noise.</p>
+            </div>
+            <div class="newsletter__form-wrap">
+              <form class="newsletter-form" data-newsletter-form novalidate>
+                <label class="sr-only" for="newsletter-email">Email address</label>
+                <input id="newsletter-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+                <button type="submit" aria-label="Subscribe to the Haven letter"><span data-icon="arrowRight"></span></button>
+              </form>
+              <div class="form-status" data-newsletter-status tabindex="-1" role="status"></div>
+              <p class="form-note"><span data-icon="info"></span> Front-end demo only. Your address is not sent or stored.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

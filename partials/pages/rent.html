@@ -1,0 +1,85 @@
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img src="assets/images/hero/rent.jpg" alt="Bright apartment living room with a red armchair and city window" width="2000" height="1100" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="page-hero__shade"></div>
+      <div class="container-haven page-hero__content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span data-icon="chevronRight"></span>
+          <span aria-current="page">Rent</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">Homes to rent</p>
+        <h1 class="h1 mt-4">A good rental should feel like a decision, not a compromise.</h1>
+        <p class="page-hero__intro">A small collection of well-considered rentals with clear monthly pricing, honest descriptions and advisors who answer.</p>
+        <div class="page-hero__meta">
+          <span><strong>5</strong> rentals</span>
+          <span>Monthly pricing shown</span>
+          <span>Updated October 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container-haven">
+        <noscript>
+          <p class="form-status form-status--error is-visible" role="alert">
+            <span>JavaScript is required to filter and display this demonstration collection. You can still browse the site or contact us directly.</span>
+          </p>
+        </noscript>
+
+        <div class="listing-layout" data-listing data-mode="rent">
+          <aside class="filters-panel" id="listingFilters" data-filter-host aria-label="Filter rental homes"></aside>
+
+          <div class="listing-main">
+            <div class="listing-toolbar">
+              <p class="results-count" data-results-count aria-live="polite">Loading rentals…</p>
+              <div class="toolbar-controls">
+                <button class="btn btn-outline btn-sm filters-toggle" type="button" data-filters-toggle aria-expanded="false" aria-controls="listingFilters">
+                  Filters
+                  <span class="filter-toggle-count" data-filters-count></span>
+                </button>
+                <label class="sr-only" for="sort-rent">Sort rentals</label>
+                <select class="select toolbar-select" id="sort-rent" data-sort></select>
+                <div class="view-toggle" role="group" aria-label="Choose property layout">
+                  <button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view"><span data-icon="grid"></span></button>
+                  <button type="button" data-view="list" aria-pressed="false" aria-label="List view"><span data-icon="list"></span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="active-filter-row" data-active-filters hidden></div>
+
+            <div class="property-grid" data-property-results></div>
+
+            <div class="listing-empty" data-empty-state>
+              <span data-icon="search"></span>
+              <h3 data-empty-title>No rentals match those filters</h3>
+              <p data-empty-text>Try widening the monthly range or removing a feature.</p>
+              <button class="btn btn-outline" type="button" data-empty-reset>Start again</button>
+            </div>
+
+            <div class="load-more-wrap" data-load-more-wrap>
+              <button class="btn btn-outline" type="button" data-load-more>Load more rentals <span data-icon="arrowRight"></span></button>
+              <p class="load-more-note" data-load-more-note></p>
+            </div>
+
+            <p class="form-note mt-6"><span data-icon="info"></span> Every rental shown is an illustrative demo listing. Rents are quoted per month and are not real offers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band on-dark">
+      <div class="container-haven cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">Thinking of letting?</p>
+          <h2 class="h2 mt-4">A rental that is<br>looked after.</h2>
+          <p>We work with a small number of owners who value careful tenant selection and a home that is presented properly.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-light" href="contact.html?subject=Letting%20enquiry">Talk to the rentals team <span data-icon="arrowRight"></span></a>
+          <a class="btn btn-outline-light" href="buy.html">Browse homes for sale</a>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sell With Haven — Haven Estates</title>
+  <meta name="description" content="Request a fictional property valuation grounded in context: comparable sales, condition, light and setting. A front-end demonstration form with no data transmission.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#183D32">
+  <link rel="canonical" href="https://havenestates.example/sell.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Haven Estates">
+  <meta property="og:title" content="A valuation should tell you something new — Haven Estates">
+  <meta property="og:description" content="A considered process from first conversation to launch, with an illustrative valuation request form.">
+  <meta property="og:url" content="https://havenestates.example/sell.html">
+  <meta property="og:image" content="https://havenestates.example/assets/images/hero/sell.jpg">
+  <meta property="og:image:alt" content="Model house and keys on a wooden table">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A valuation should tell you something new — Haven Estates">
+  <meta name="twitter:description" content="A considered process from first conversation to launch, with an illustrative valuation request form.">
+  <meta name="twitter:image" content="https://havenestates.example/assets/images/hero/sell.jpg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .accordion-panel { grid-template-rows: 1fr !important; }
+      .search-form[hidden] { display: none !important; }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Haven Estates",
+      "description": "A fictional real-estate brand created for a front-end demonstration. All listings, advisors, statistics and testimonials are illustrative.",
+      "url": "https://havenestates.example/",
+      "telephone": "+1-555-014-7000",
+      "email": "hello@havenestates.example",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "120 Alder Row, Suite 4",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94110",
+        "addressCountry": "US"
+      }
+    }
+  </script>
+</head>
+<body class="page-inner" data-section="sell">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="announcement">
+      A demonstration collection — listings, advisors and stories are illustrative.
+      <a href="about.html#disclaimer">Read the disclaimer</a>
+    </div>
+
+    <div class="header-inner container-haven">
+      <a class="brand" href="index.html" aria-label="Haven Estates — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+          <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+          <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Haven Estates</span>
+          <span class="brand-sub">Private property, considered</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <ul>
+          <li class="nav-item nav-item--menu">
+            <a class="nav-link" href="buy.html" data-nav="buy">
+              Buy
+              <span class="nav-caret" data-icon="chevronDown"></span>
+            </a>
+            <div class="nav-menu">
+              <a href="buy.html">All homes for sale</a>
+              <a href="buy.html?location=Coastline">Coastal homes</a>
+              <a href="buy.html?location=City">City residences</a>
+              <a href="buy.html?sort=newest">New to market</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="rent.html" data-nav="rent">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html" data-nav="sell">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="agents.html" data-nav="agents">Advisors</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html" data-nav="insights">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-nav="about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+15550147000">
+          <span data-icon="phone"></span>
+          +1 (555) 014-7000
+        </a>
+        <button class="icon-btn" type="button" data-favorites-open aria-label="Open your shortlist">
+          <span data-icon="heart"></span>
+          <span class="saved-count" data-favorites-count data-count="0"></span>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="contact.html">Book a consultation</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span data-icon="menu"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="brand" href="index.html" aria-label="Haven Estates — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+          <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+          <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Haven Estates</span>
+          <span class="brand-sub">Private property, considered</span>
+        </span>
+      </a>
+      <button class="mobile-menu__close" type="button" data-menu-close aria-label="Close menu">
+        <span data-icon="close"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu__body">
+      <nav aria-label="Mobile">
+        <ul class="mobile-nav">
+          <li>
+            <a class="mobile-nav__link" href="buy.html">Buy <span data-icon="arrowUpRight"></span></a>
+            <ul class="mobile-nav__sub">
+              <li><a href="buy.html?location=Coastline">Coastal</a></li>
+              <li><a href="buy.html?location=City">City</a></li>
+              <li><a href="buy.html?location=Countryside">Countryside</a></li>
+              <li><a href="buy.html?sort=newest">New to market</a></li>
+            </ul>
+          </li>
+          <li><a class="mobile-nav__link" href="rent.html">Rent <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="sell.html">Sell <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="agents.html">Advisors <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="blog.html">Journal <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="about.html">About <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <span data-icon="arrowUpRight"></span></a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__meta">
+        <a href="tel:+15550147000">+1 (555) 014-7000</a>
+        <a href="mailto:hello@havenestates.example">hello@havenestates.example</a>
+        <span>120 Alder Row, San Francisco — demonstration address</span>
+      </div>
+
+      <div class="mobile-menu__actions">
+        <a class="btn btn-light" href="contact.html">Book a consultation</a>
+        <button class="btn btn-outline-light" type="button" data-favorites-open>
+          <span data-icon="heart"></span>
+          Your shortlist (<span data-favorites-count data-count="0">0</span>)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-scrim" data-panel-scrim></div>
+
+  <aside class="favorites-panel" data-favorites-panel aria-hidden="true" aria-label="Your shortlist">
+    <div class="favorites-head">
+      <div>
+        <h2>Your shortlist</h2>
+        <p data-favorites-summary>No saved properties yet</p>
+      </div>
+      <button class="icon-btn" type="button" data-favorites-close aria-label="Close shortlist">
+        <span data-icon="close"></span>
+      </button>
+    </div>
+    <div class="favorites-body">
+      <ul class="favorites-list" data-favorites-list></ul>
+    </div>
+    <div class="favorites-foot" data-favorites-footer hidden>
+      <div class="grid gap-2">
+        <a class="btn btn-primary btn-block" href="buy.html?saved=1">Saved homes</a>
+        <a class="btn btn-outline btn-block" href="rent.html?saved=1">Saved rentals</a>
+      </div>
+      <p class="form-note mt-3"><span data-icon="info"></span> Shortlists are stored only in this browser.</p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img src="assets/images/hero/sell.jpg" alt="Model house and keys on a wooden table" width="2000" height="1100" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="page-hero__shade"></div>
+      <div class="container-haven page-hero__content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span data-icon="chevronRight"></span>
+          <span aria-current="page">Sell</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">Sell with Haven</p>
+        <h1 class="h1 mt-4">A valuation should tell you something you did not already know.</h1>
+        <p class="page-hero__intro">Not a number designed to win your listing — a considered view of your home, its street and the buyers most likely to value it.</p>
+        <div class="page-hero__meta">
+          <span>No obligation</span>
+          <span>Walkthrough in person</span>
+          <span>Five landscapes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="intro-split__grid">
+          <div class="intro-split__text reveal">
+            <p class="eyebrow">The approach</p>
+            <h2 class="h2">Price is a story<br>about <span class="h-accent">context.</span></h2>
+            <p class="lede">Two houses can look alike on paper and feel entirely different in person. A useful valuation begins with the things a spreadsheet cannot see.</p>
+            <p>We look at comparable sales, certainly. But we also look at light, proportion, noise, outlook, the walk to the corner and the way a street changes over a day. Then we talk about the buyers who would notice those things.</p>
+            <p>The result is a pricing conversation with reasons — and a plan for presenting the home that does not rely on erasing what makes it yours.</p>
+            <div class="why-points">
+              <div class="why-point">
+                <span class="why-point__num">01</span>
+                <div>
+                  <h3>Walked, not estimated</h3>
+                  <p>Every fictional valuation in this demo begins with an in-person walkthrough and an honest conversation about condition.</p>
+                </div>
+              </div>
+              <div class="why-point">
+                <span class="why-point__num">02</span>
+                <div>
+                  <h3>Written, not implied</h3>
+                  <p>You leave with a clear summary of the reasoning, the recommended range and the trade-offs behind it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="frame-image reveal" data-delay="1">
+            <div class="frame-image__media">
+              <img src="assets/images/general/why-haven.jpg" alt="Open-plan dining room with a black table and timber kitchen" width="1400" height="1050" loading="lazy" decoding="async">
+            </div>
+            <div class="frame-image__badge">
+              <strong>1:1</strong>
+              <span>The advisor who values your home also represents it</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container-haven">
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">The process</p>
+            <h2 class="h2">Four steps,<br>no surprises.</h2>
+            <p>A small practice can move quickly without rushing the parts that matter. This is the process we describe in the demo.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Conversation</h3>
+            <p>A short call to understand your timing, your questions and what you want from the sale.</p>
+          </article>
+          <article class="step reveal" data-delay="1">
+            <span class="step__num">02</span>
+            <h3>Walkthrough</h3>
+            <p>We visit in person, take our time and talk through condition, presentation and likely buyer profiles.</p>
+          </article>
+          <article class="step reveal" data-delay="2">
+            <span class="step__num">03</span>
+            <h3>Strategy</h3>
+            <p>You receive a written pricing range, a preparation plan and a clear view of the trade-offs.</p>
+          </article>
+          <article class="step reveal" data-delay="3">
+            <span class="step__num">04</span>
+            <h3>Launch</h3>
+            <p>Photography, editorial copy and a measured release — handled by the advisor you have been working with.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="valuation">
+      <div class="container-haven">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="section-head__text">
+              <p class="eyebrow">Request a valuation</p>
+              <h2 class="h2">Tell us about<br>the place.</h2>
+              <p>A few details are enough to start. We will follow up to arrange a walkthrough — in the story of this demo, at least.</p>
+            </div>
+
+            <div class="contact-block">
+              <h2>What happens next</h2>
+              <p>Your request is reviewed by the advisor for that landscape. If the fit is right, we arrange a walkthrough within a week.</p>
+            </div>
+
+            <div class="contact-block">
+              <h2>Prefer to talk?</h2>
+              <a class="contact-link-lg" href="tel:+15550147000">+1 (555) 014-7000</a>
+              <a href="mailto:hello@havenestates.example">hello@havenestates.example</a>
+              <p class="body-sm mt-2">Demonstration contact details. No calls or emails are monitored.</p>
+            </div>
+
+            <div class="contact-block">
+              <h2>Not ready to sell?</h2>
+              <p>That is a reasonable place to be. A valuation can still be useful for planning — and there is no obligation to list.</p>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal" data-delay="1">
+            <p class="eyebrow">Valuation request</p>
+            <h2 class="h2 mt-3">A few details.</h2>
+            <p>This is a front-end demonstration. Your answers are validated in the browser and never sent or stored.</p>
+
+            <form data-validate novalidate data-success-title="Thank you —" data-success="your valuation request passed validation. This is a front-end demonstration, so nothing was sent or stored.">
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field-label" for="sell-location">Location <span>*</span></label>
+                  <select class="select" id="sell-location" name="location" required>
+                    <option value="">Where is the property?</option>
+                    <option value="Coastline">Coastline</option>
+                    <option value="City">City</option>
+                    <option value="Countryside">Countryside</option>
+                    <option value="Lakeside">Lakeside</option>
+                    <option value="Mountains">Mountains</option>
+                  </select>
+                  <p class="field-error" id="sell-location-error" data-error-for="location"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-type">Property type <span>*</span></label>
+                  <select class="select" id="sell-type" name="propertyType" required>
+                    <option value="">Select a type</option>
+                    <option value="House">House</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Penthouse">Penthouse</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Cabin">Cabin</option>
+                    <option value="Estate">Estate</option>
+                    <option value="Townhouse">Townhouse</option>
+                  </select>
+                  <p class="field-error" id="sell-type-error" data-error-for="propertyType"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-bedrooms">Bedrooms</label>
+                  <select class="select" id="sell-bedrooms" name="bedrooms">
+                    <option value="">Select bedrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6+">6 or more</option>
+                  </select>
+                  <p class="field-error" id="sell-bedrooms-error" data-error-for="bedrooms"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-size">Approximate size</label>
+                  <input class="input" id="sell-size" name="size" type="text" inputmode="numeric" placeholder="Square feet">
+                  <p class="field-error" id="sell-size-error" data-error-for="size"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-timeline">Timeline <span>*</span></label>
+                  <select class="select" id="sell-timeline" name="timeline" required>
+                    <option value="">When might you sell?</option>
+                    <option value="Within 3 months">Within 3 months</option>
+                    <option value="3–6 months">3–6 months</option>
+                    <option value="6–12 months">6–12 months</option>
+                    <option value="Just exploring">Just exploring</option>
+                  </select>
+                  <p class="field-error" id="sell-timeline-error" data-error-for="timeline"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-name">Full name <span>*</span></label>
+                  <input class="input" id="sell-name" name="name" type="text" autocomplete="name" required>
+                  <p class="field-error" id="sell-name-error" data-error-for="name"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-email">Email <span>*</span></label>
+                  <input class="input" id="sell-email" name="email" type="email" autocomplete="email" required data-rule="email">
+                  <p class="field-error" id="sell-email-error" data-error-for="email"></p>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="sell-phone">Phone</label>
+                  <input class="input" id="sell-phone" name="phone" type="tel" autocomplete="tel" data-rule="phone">
+                  <p class="field-error" id="sell-phone-error" data-error-for="phone"></p>
+                </div>
+                <div class="field field--full">
+                  <label class="field-label" for="sell-message">Anything we should know?</label>
+                  <textarea class="textarea" id="sell-message" name="message" rows="4" placeholder="Recent renovations, a view worth protecting, a timing constraint — anything that shapes the story."></textarea>
+                  <p class="field-error" id="sell-message-error" data-error-for="message"></p>
+                </div>
+                <div class="field field--full">
+                  <label class="checkbox-field">
+                    <input type="checkbox" name="consent" required>
+                    <span>I understand this is a demonstration and agree to be contacted about this fictional valuation. <span aria-hidden="true">*</span></span>
+                  </label>
+                  <p class="field-error" id="sell-consent-error" data-error-for="consent"></p>
+                </div>
+              </div>
+
+              <div class="form-status" data-form-status tabindex="-1" role="status"></div>
+              <button class="btn btn-primary" type="submit">Request a valuation <span data-icon="arrowRight"></span></button>
+              <p class="form-note"><span data-icon="info"></span> No data leaves your browser. Nothing is sent, stored or shared.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band on-dark">
+      <div class="container-haven cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">A second opinion</p>
+          <h2 class="h2 mt-4">Not selling yet?<br>That is fine.</h2>
+          <p>Many of the most useful conversations happen a year before a move. Ask us what we would watch, and why.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-light" href="contact.html">Talk it through <span data-icon="arrowRight"></span></a>
+          <a class="btn btn-outline-light" href="agents.html">Meet the advisors</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main container-haven">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Haven Estates — home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+            <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+            <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+            <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+            <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Haven Estates</span>
+            <span class="brand-sub">Private property, considered</span>
+          </span>
+        </a>
+        <p>A fictional boutique agency created to demonstrate considered real-estate design, editorial storytelling and careful search.</p>
+        <p class="footer-disclaimer">Demonstration project only. Every property, advisor, statistic, testimonial and contact detail is fictional or uses reserved example addresses.</p>
+        <div class="footer-contact">
+          <a href="tel:+15550147000"><span data-icon="phone"></span> +1 (555) 014-7000</a>
+          <a href="mailto:hello@havenestates.example"><span data-icon="mail"></span> hello@havenestates.example</a>
+          <a href="contact.html"><span data-icon="mapPin"></span> 120 Alder Row, San Francisco</a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="buy.html">Homes for sale</a></li>
+          <li><a href="rent.html">Homes for rent</a></li>
+          <li><a href="sell.html">Sell with Haven</a></li>
+          <li><a href="agents.html">Our advisors</a></li>
+          <li><a href="blog.html">The journal</a></li>
+          <li><a href="about.html">Our story</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-links">
+          <li><a href="contact.html">Buyer representation</a></li>
+          <li><a href="sell.html">Property valuation</a></li>
+          <li><a href="rent.html">Rental search</a></li>
+          <li><a href="contact.html">Relocation support</a></li>
+          <li><a href="agents.html">Meet the team</a></li>
+          <li><a href="contact.html">General enquiry</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Visit</h2>
+        <p class="footer-address">120 Alder Row, Suite 4<br>San Francisco, CA 94110<br>Demonstration address</p>
+        <div class="footer-hours">
+          <div><span>Mon – Fri</span><span>9:00 – 18:00</span></div>
+          <div><span>Saturday</span><span>10:00 – 16:00</span></div>
+          <div><span>Sunday</span><span>By appointment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal container-haven">
+      <p>© 2026 Haven Estates. Static front-end demonstration. Forms validate in the browser and do not send or store data. No real listings or identities are represented.</p>
+      <p><a href="contact.html">Contact</a> · <a href="about.html#disclaimer">Disclaimer</a></p>
+    </div>
+
+    <div class="footer-wordmark" aria-hidden="true">
+      <span>Haven Estates</span>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite">
+    <span data-icon="checkCircle"></span>
+    <span data-toast-message></span>
+  </div>
+
+  <script defer src="js/properties-data.js"></script>
+  
+  <script defer src="js/main.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/favorites.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/forms.js"></script>
+  <script defer src="js/sell.js"></script>
+</body>
+</html>

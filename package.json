@@ -1,0 +1,25 @@
+{
+  "name": "haven-estates",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Haven Estates — a premium, multi-page real estate website built with HTML, Tailwind CSS and vanilla JavaScript.",
+  "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
+    "build:css": "tailwindcss -c config/tailwind.config.js -i css/input.css -o css/output.css --minify",
+    "build": "npm run build:pages && npm run build:css",
+    "watch:css": "tailwindcss -c config/tailwind.config.js -i css/input.css -o css/output.css --watch",
+    "dev": "npm run build && npx serve . -l 4173 -c serve.json",
+    "serve": "npx serve . -l 4173 -c serve.json"
+  },
+  "keywords": [
+    "real-estate",
+    "static-site",
+    "tailwindcss",
+    "vanilla-javascript"
+  ],
+  "author": "Haven Estates (demo brand)",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

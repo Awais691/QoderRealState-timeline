@@ -1,0 +1,85 @@
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img src="assets/images/hero/buy.jpg" alt="White modern villa with glass doors opening to a pool terrace" width="2000" height="1100" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="page-hero__shade"></div>
+      <div class="container-haven page-hero__content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span data-icon="chevronRight"></span>
+          <span aria-current="page">Buy</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">Properties for sale</p>
+        <h1 class="h1 mt-4">Find a home with less noise and more room to think.</h1>
+        <p class="page-hero__intro">A considered collection of houses, villas and city residences. Filter by the things that actually change how a place feels.</p>
+        <div class="page-hero__meta">
+          <span><strong>12</strong> residences</span>
+          <span><strong>5</strong> landscapes</span>
+          <span>Updated October 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container-haven">
+        <noscript>
+          <p class="form-status form-status--error is-visible" role="alert">
+            <span>JavaScript is required to filter and display this demonstration collection. You can still browse the site or contact us directly.</span>
+          </p>
+        </noscript>
+
+        <div class="listing-layout" data-listing data-mode="buy">
+          <aside class="filters-panel" id="listingFilters" data-filter-host aria-label="Filter homes for sale"></aside>
+
+          <div class="listing-main">
+            <div class="listing-toolbar">
+              <p class="results-count" data-results-count aria-live="polite">Loading homes…</p>
+              <div class="toolbar-controls">
+                <button class="btn btn-outline btn-sm filters-toggle" type="button" data-filters-toggle aria-expanded="false" aria-controls="listingFilters">
+                  Filters
+                  <span class="filter-toggle-count" data-filters-count></span>
+                </button>
+                <label class="sr-only" for="sort-buy">Sort homes</label>
+                <select class="select toolbar-select" id="sort-buy" data-sort></select>
+                <div class="view-toggle" role="group" aria-label="Choose property layout">
+                  <button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view"><span data-icon="grid"></span></button>
+                  <button type="button" data-view="list" aria-pressed="false" aria-label="List view"><span data-icon="list"></span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="active-filter-row" data-active-filters hidden></div>
+
+            <div class="property-grid" data-property-results></div>
+
+            <div class="listing-empty" data-empty-state>
+              <span data-icon="search"></span>
+              <h3 data-empty-title>No properties match those filters</h3>
+              <p data-empty-text>Try widening the price range or removing a feature.</p>
+              <button class="btn btn-outline" type="button" data-empty-reset>Start again</button>
+            </div>
+
+            <div class="load-more-wrap" data-load-more-wrap>
+              <button class="btn btn-outline" type="button" data-load-more>Load more homes <span data-icon="arrowRight"></span></button>
+              <p class="load-more-note" data-load-more-note></p>
+            </div>
+
+            <p class="form-note mt-6"><span data-icon="info"></span> Every residence shown is an illustrative demo listing. Prices, addresses and availability are fictional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band on-dark">
+      <div class="container-haven cta-band__inner">
+        <div>
+          <p class="eyebrow eyebrow--light">A second pair of eyes</p>
+          <h2 class="h2 mt-4">Not sure where<br>to begin?</h2>
+          <p>Tell us how you want to live and we will suggest a short list — even if that list is shorter than you expected.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn-light" href="contact.html">Speak to an advisor <span data-icon="arrowRight"></span></a>
+          <a class="btn btn-outline-light" href="rent.html">Looking to rent?</a>
+        </div>
+      </div>
+    </section>

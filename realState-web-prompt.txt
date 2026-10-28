@@ -1,0 +1,511 @@
+# Master Prompt: Premium Multi-Page Real Estate Website
+
+## 1. Role and Objective
+
+Act as a Senior Frontend Developer, Professional UI/UX Designer, and Real Estate Website Specialist.
+
+Using **Qoder AI Desktop with the Auto model**, build a complete, production-quality, multi-page real estate website from scratch.
+
+The website must look like a professionally designed real estate brand created by an experienced human designer, not a generic AI-generated template.
+
+**Important:** Use the currently selected Qoder Auto model. Do not ask me to select a specific AI model or change the model during development.
+
+Build the actual project files in the current workspace. Do not only provide code examples, explanations, or mockups.
+
+## 2. Technology Stack — Strict Rules
+
+Use only the following frontend technologies:
+
+- HTML5
+- CSS3
+- Tailwind CSS
+- Vanilla JavaScript (ES6+)
+- Lightweight JavaScript libraries only when genuinely necessary for UI interactions or animations.
+
+Suitable optional libraries:
+- Swiper.js for property carousels.
+- Lucide Icons for consistent icons.
+- AOS or GSAP for carefully controlled animations, if required.
+
+### Restrictions
+
+- Do not use React, Next.js, Vue, Angular, or other frontend frameworks.
+- Do not use TypeScript.
+- Do not use backend frameworks, Node.js application servers, or databases.
+- Do not use unnecessary libraries.
+- The website must work as a static frontend project suitable for deployment on shared hosting.
+- Use Tailwind CSS properly alongside custom CSS where needed.
+- If a Tailwind CDN is used for development simplicity, document its production limitations and provide an appropriate production-ready option.
+
+## 3. Design Research — Top 5 Reference Websites
+
+Before implementing the UI, study these five real estate websites for design inspiration:
+
+1. **Sotheby's International Realty** — https://www.sothebysrealty.com/
+   - Luxury property photography, sophisticated typography, elegant spacing, premium branding.
+
+2. **The Agency** — https://www.theagencyre.com/
+   - Editorial layouts, premium property cards, bold typography, high-end real estate presentation.
+
+3. **Compass** — https://www.compass.com/
+   - Modern property discovery, intuitive search, clean layouts, and user-friendly navigation.
+
+4. **Zillow** — https://www.zillow.com/
+   - Property search experience, filtering patterns, listing cards, and practical user interactions.
+
+5. **Rightmove** — https://www.rightmove.co.uk/
+   - Listing information hierarchy, search filters, property details, and straightforward navigation.
+
+Use these websites as **design and content-structure references only**. Do not copy their exact layouts, branding, text, assets, or source code.
+
+Combine their strongest design ideas into one original visual identity.
+
+If a reference website cannot be accessed, use your existing knowledge of its established design patterns and continue without getting stuck.
+
+## 4. Brand Identity and Visual Direction
+
+Create an original real estate brand named **Haven Estates**.
+
+Brand personality:
+- Premium
+- Trustworthy
+- Elegant
+- Modern
+- Approachable
+- Professional
+
+### Visual Style
+
+Use a sophisticated editorial design instead of the typical generic AI website appearance.
+
+Suggested color palette:
+- Warm off-white: #F8F7F4
+- Deep forest green: #183D32
+- Charcoal: #202522
+- Muted sage: #A9B8A7
+- Soft beige: #EAE4DA
+- White: #FFFFFF
+
+Use these colors as a starting point and refine them where necessary.
+
+### Typography
+
+Use a refined combination of:
+- A distinctive serif font for large headings.
+- A clean sans-serif font for body text, navigation, forms, and property information.
+
+Possible fonts: DM Serif Display, Playfair Display, and Inter.
+
+### UI Requirements
+
+- Large, high-quality property photography.
+- Strong visual hierarchy.
+- Generous whitespace.
+- Asymmetrical editorial layouts where appropriate.
+- Consistent spacing and alignment.
+- Refined borders, subtle shadows, and tasteful rounded corners.
+- Elegant buttons and clear calls to action.
+- Beautiful property cards with balanced image-to-text proportions.
+- Carefully designed desktop navigation and mobile menus.
+- Realistic property information, prices, locations, and descriptions.
+- A consistent design system across all pages.
+
+Avoid repetitive layouts. Give every page its own appropriate composition while maintaining a unified brand identity.
+
+## 5. Required Website Pages
+
+Create all of the following pages as separate HTML files.
+
+### Page 1: Home — index.html
+
+Include:
+- Premium navigation bar with logo.
+- Large photographic hero section.
+- Compelling headline and supporting text.
+- Property search interface.
+- Buy, Rent, and Sell options.
+- Location, property type, and price filters.
+- Featured properties.
+- Explore properties by location.
+- Property categories.
+- Why choose Haven Estates.
+- Real estate market statistics.
+- Testimonials.
+- Featured agents or property experts.
+- Editorial real estate insights.
+- Newsletter subscription section.
+- Detailed footer.
+
+### Page 2: Properties for Sale — buy.html
+
+Include:
+- Page heading and introductory content.
+- Property search and filtering interface.
+- Grid/list layout toggle if practical.
+- Property cards with photographs, prices, locations, bedrooms, bathrooms, and area.
+- Sort options such as newest, price low-to-high, and price high-to-low.
+- Pagination or functional load-more button.
+- Empty state when no properties match the filters.
+
+### Page 3: Properties for Rent — rent.html
+
+Include:
+- Rental-focused hero or page introduction.
+- Monthly rent filters.
+- Location and property-type filters.
+- Rental property listings.
+- Rental prices with clear monthly labels.
+- Bedrooms, bathrooms, and property sizes.
+- Featured rental properties.
+- Functional filtering and sorting.
+
+### Page 4: Property Details — property-details.html
+
+Include:
+- Large property image gallery.
+- Property title, location, and price.
+- Property overview.
+- Bedrooms, bathrooms, area, and property type.
+- Detailed property description.
+- Features and amenities.
+- Agent contact information.
+- Inquiry form.
+- Similar properties.
+- Sticky or prominent contact CTA on desktop where appropriate.
+- Accessible mobile-friendly image gallery.
+
+Support property-specific content through URL query parameters or a reusable JavaScript data structure.
+
+### Page 5: Agents — agents.html
+
+Include:
+- Professional agents introduction.
+- Agent profile cards with portraits.
+- Agent names, specialties, and contact information.
+- Search or filter by agent specialty.
+- Individual contact actions.
+- A CTA for prospective property sellers and buyers.
+
+### Page 6: About Us — about.html
+
+Include:
+- Brand story.
+- Company mission and values.
+- Our approach to real estate.
+- Company statistics.
+- Team presentation.
+- Customer testimonials.
+- CTA to explore properties.
+
+### Page 7: Contact Us — contact.html
+
+Include:
+- Contact information.
+- Contact form.
+- Name, email, phone, subject, and message fields.
+- Client-side form validation.
+- Success and error messages.
+- Office location section.
+- Business hours.
+- FAQ section.
+- Responsive contact layout.
+
+Clearly indicate that the contact form is frontend-only unless a real form submission service is configured.
+
+### Page 8: Blog / Real Estate Insights — blog.html
+
+Include:
+- Editorial hero section.
+- Featured article.
+- Article cards with photographs.
+- Categories such as Buying, Selling, Renting, and Market Insights.
+- Search and category filters.
+- Read-more links.
+- Pagination or load-more interaction.
+
+### Page 9: Blog Article — blog-details.html
+
+Include:
+- Article title and subtitle.
+- Author and publication date.
+- Featured image.
+- Readable article content.
+- Proper heading hierarchy.
+- Related articles.
+- Back-to-blog navigation.
+
+### Page 10: Sell Your Property — sell.html
+
+Include:
+- Property selling hero section.
+- Benefits of listing with Haven Estates.
+- Selling process explained step by step.
+- Valuation inquiry form.
+- Property type, location, name, email, and phone fields.
+- Client-side validation.
+- Clear CTA and realistic service information.
+
+## 6. Micro-Interactions and Mini Animations
+
+Add subtle, polished motion that improves the experience rather than distracting from it.
+
+Required interactions:
+- Smooth scrolling where appropriate.
+- Subtle hero content entrance animation.
+- Gentle image zoom on property card hover.
+- Smooth button hover and active states.
+- Underline or color transitions for navigation links.
+- Small dropdown and mobile-menu transitions.
+- Property card reveal animations when entering the viewport.
+- Smooth carousel movement where applicable.
+- Favorite/heart button toggle.
+- Filter panel interactions.
+- Form validation feedback.
+- Subtle header transition when scrolling.
+- Accessible accordion animations.
+- Small success feedback after frontend-only form validation.
+
+Animation principles:
+- Use short, refined transitions, generally around 150–350 ms for hover and interface feedback.
+- Avoid excessive parallax, bouncing effects, constant floating objects, and unnecessary animation.
+- Avoid making every section animate identically.
+- Respect the prefers-reduced-motion accessibility setting.
+- Ensure animations never prevent users from accessing content.
+
+## 7. Functional Requirements
+
+Do not build a static visual-only website.
+
+Implement working frontend interactions:
+
+- Every navigation link opens the correct page.
+- Search controls update the property results.
+- Filters work together correctly.
+- Sorting changes the order of properties.
+- Property cards open the correct details page.
+- Favorite buttons toggle their selected state.
+- Mobile navigation opens and closes correctly.
+- Blog search and category filters work.
+- Contact and valuation forms validate user input.
+- Newsletter form displays an appropriate response.
+- Pagination or load-more controls work where included.
+- Dropdowns, accordions, carousels, and view toggles work.
+- Search and filter state should be preserved where practical.
+- All buttons must have meaningful behavior.
+
+Use a centralized JavaScript property dataset so that property cards, filters, and details pages can share consistent information.
+
+Use realistic demonstration data and clearly identify placeholder contact information. Do not imply that sample properties, agents, testimonials, or statistics are verified real-world listings.
+
+Do not pretend frontend-only forms send messages to a real server.
+
+## 8. Responsive Design
+
+The entire website must be responsive across:
+
+- Small mobile phones: 320px–374px.
+- Standard mobile phones: 375px–480px.
+- Large phones: 481px–767px.
+- Tablets: 768px–1023px.
+- Laptops: 1024px–1439px.
+- Large desktop screens: 1440px and above.
+
+Requirements:
+- No horizontal overflow.
+- No clipped headings or buttons.
+- Property grids adapt smoothly to available width.
+- Images maintain suitable aspect ratios.
+- Forms remain easy to complete on mobile.
+- Navigation transforms into an accessible mobile menu.
+- Text remains readable at every breakpoint.
+- Touch targets are appropriately sized.
+- Mobile layouts must be intentionally designed, not simply squeezed desktop layouts.
+
+Test the important layouts at 320px, 375px, 768px, 1024px, 1440px, and 1920px widths.
+
+## 9. SEO and Accessibility
+
+Implement:
+- Unique page titles and meta descriptions.
+- Semantic HTML5 structure.
+- Correct heading hierarchy.
+- Descriptive image alt attributes.
+- Accessible labels for form controls.
+- Keyboard-accessible navigation and interactive elements.
+- Visible focus states.
+- Appropriate ARIA attributes where necessary.
+- Open Graph metadata where useful.
+- Descriptive URLs through filenames and links.
+- A custom 404 page if practical.
+- A favicon and consistent brand metadata.
+
+Optimize images using appropriate formats, dimensions, and lazy loading for below-the-fold content.
+
+Do not lazy-load the main above-the-fold hero image if that would delay its display.
+
+## 10. Proper Project Folder Structure
+
+Use a clean, maintainable folder structure similar to the following:
+
+haven-estates/
+│
+├── index.html
+├── buy.html
+├── rent.html
+├── property-details.html
+├── agents.html
+├── about.html
+├── contact.html
+├── blog.html
+├── blog-details.html
+├── sell.html
+├── 404.html
+├── README.md
+├── robots.txt
+├── sitemap.xml
+│
+├── assets/
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── properties/
+│   │   ├── agents/
+│   │   ├── blog/
+│   │   └── general/
+│   ├── icons/
+│   └── fonts/
+│
+├── css/
+│   ├── input.css
+│   ├── output.css
+│   ├── styles.css
+│   ├── components.css
+│   └── responsive.css
+│
+├── js/
+│   ├── main.js
+│   ├── properties-data.js
+│   ├── property-listing.js
+│   ├── property-details.js
+│   ├── filters.js
+│   ├── favorites.js
+│   ├── forms.js
+│   ├── navigation.js
+│   └── animations.js
+│
+└── config/
+    └── tailwind.config.js
+
+Adjust the structure when needed, but maintain a clear separation of HTML, styling, reusable components, data, and JavaScript functionality.
+
+Do not create empty files simply to make the structure look complete. Every included file must have a clear purpose.
+
+If you use a Tailwind build process, configure it properly and explain the exact build commands in README.md. Ensure the final compiled CSS is available for static hosting.
+
+## 11. Image and Content Quality
+
+Use high-quality real estate imagery appropriate for luxury homes, apartments, contemporary interiors, architecture, and neighborhood photography.
+
+Prefer reliable image sources such as Unsplash or Pexels when their usage terms permit the intended use.
+
+Requirements:
+- Use consistent image quality and visual treatment.
+- Choose images that match the property descriptions.
+- Avoid repetitive imagery wherever possible.
+- Prevent broken image links.
+- Provide graceful fallback images.
+- Do not invent local property availability or real agent identities.
+- Do not use random images unrelated to the content.
+- Avoid generic AI-generated marketing copy and repetitive placeholder text.
+
+If remote images are used, document their sources and ensure the website remains visually usable if an image fails to load.
+
+## 12. Performance and Code Quality
+
+Write maintainable, readable, professional code.
+
+- Use reusable JavaScript functions for common behavior.
+- Avoid unnecessary code duplication.
+- Keep naming conventions consistent.
+- Avoid giant, unstructured HTML files.
+- Separate reusable components and shared styles appropriately.
+- Avoid inline JavaScript and excessive inline styling.
+- Prevent JavaScript errors and broken navigation.
+- Use event delegation when appropriate.
+- Avoid excessive DOM updates.
+- Use efficient event listeners.
+- Ensure all assets load correctly.
+- Keep dependencies lightweight.
+- Never leave TODO comments for essential functionality.
+- Do not claim a feature works unless it has been implemented and tested.
+
+## 13. Qoder AI Execution Workflow
+
+Work directly inside the currently opened project workspace.
+
+### Phase 1: Plan
+
+1. Inspect the existing workspace before modifying anything.
+2. Research the five reference websites where accessible.
+3. Establish the design system and page structure.
+4. Define the property data model and reusable UI patterns.
+5. Create a practical implementation plan.
+
+### Phase 2: Build
+
+1. Create the folder structure.
+2. Implement the shared design system and navigation.
+3. Build the homepage.
+4. Implement all remaining HTML pages.
+5. Create the shared property dataset.
+6. Implement filtering, sorting, favorites, navigation, and forms.
+7. Add responsive styling and subtle animations.
+8. Add SEO, accessibility, and performance improvements.
+
+### Phase 3: Test and Refine
+
+1. Inspect every HTML page.
+2. Check internal links and asset paths.
+3. Test filters, sorting, favorites, and form validation.
+4. Test property details with multiple property IDs.
+5. Test responsive layouts at the specified viewport widths.
+6. Check browser console errors when browser tools are available.
+7. Fix broken images, overflow, spacing, and alignment problems.
+8. Verify that the site can be deployed as a static website.
+9. Update README.md with setup, build, testing, and deployment instructions.
+
+If browser automation or screenshot tools are unavailable, perform the checks possible within the workspace and clearly document any tests that could not be completed.
+
+## 14. Efficiency Rules for Qoder Auto
+
+- Use the currently selected Auto model.
+- Work in focused implementation stages.
+- Inspect existing files before editing them.
+- Create related files together when practical.
+- Avoid repeatedly rewriting files that are already correct.
+- Do not spend excessive time researching references after sufficient design direction has been established.
+- Avoid unnecessary explanations between coding steps.
+- Do not stop after creating the homepage.
+- Do not stop at a plan, wireframe, or partial implementation.
+- Continue until all required pages and core interactions are implemented.
+- If an issue blocks one feature, continue with other independent tasks and return to the blocked feature later.
+- Validate completed work instead of endlessly rechecking unchanged files.
+
+Prioritize a complete, visually polished, working website over excessive planning and repeated inspection.
+
+## 15. Final Acceptance Criteria
+
+The project is complete only when:
+
+- All required pages exist and have meaningful content.
+- The design is visually consistent and professionally executed.
+- The website looks custom-designed rather than like a generic AI template.
+- All core interactions work.
+- Property listings and details use consistent data.
+- Responsive layouts work across mobile, tablet, and desktop.
+- Animations are subtle and accessible.
+- There are no known broken internal links or missing essential assets.
+- The project uses only the approved frontend technologies.
+- Static deployment is documented.
+- README.md explains how to run, build, test, and deploy the website.
+
+**Start working in the current workspace now. Build the complete website, implement the actual files, test the functionality, fix issues, and leave the project ready for review and static hosting. Do not finish after producing the plan.**

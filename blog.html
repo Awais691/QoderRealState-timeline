@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Journal — Haven Estates</title>
+  <meta name="description" content="Practical, fictional editorial on buying, selling, renting, market observation and design. Search the archive or filter by category. Written for demonstration only.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#183D32">
+  <link rel="canonical" href="https://havenestates.example/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Haven Estates">
+  <meta property="og:title" content="Notes on living well, thoughtfully — The Haven Journal">
+  <meta property="og:description" content="Considered thinking on buying, selling, renting and the spaces in between.">
+  <meta property="og:url" content="https://havenestates.example/blog.html">
+  <meta property="og:image" content="https://havenestates.example/assets/images/hero/blog.jpg">
+  <meta property="og:image:alt" content="Person signing a document with a pen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notes on living well, thoughtfully — The Haven Journal">
+  <meta name="twitter:description" content="Considered thinking on buying, selling, renting and the spaces in between.">
+  <meta name="twitter:image" content="https://havenestates.example/assets/images/hero/blog.jpg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .accordion-panel { grid-template-rows: 1fr !important; }
+      .search-form[hidden] { display: none !important; }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Haven Estates",
+      "description": "A fictional real-estate brand created for a front-end demonstration. All listings, advisors, statistics and testimonials are illustrative.",
+      "url": "https://havenestates.example/",
+      "telephone": "+1-555-014-7000",
+      "email": "hello@havenestates.example",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "120 Alder Row, Suite 4",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94110",
+        "addressCountry": "US"
+      }
+    }
+  </script>
+</head>
+<body class="page-inner" data-section="insights">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="announcement">
+      A demonstration collection — listings, advisors and stories are illustrative.
+      <a href="about.html#disclaimer">Read the disclaimer</a>
+    </div>
+
+    <div class="header-inner container-haven">
+      <a class="brand" href="index.html" aria-label="Haven Estates — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+          <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+          <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Haven Estates</span>
+          <span class="brand-sub">Private property, considered</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <ul>
+          <li class="nav-item nav-item--menu">
+            <a class="nav-link" href="buy.html" data-nav="buy">
+              Buy
+              <span class="nav-caret" data-icon="chevronDown"></span>
+            </a>
+            <div class="nav-menu">
+              <a href="buy.html">All homes for sale</a>
+              <a href="buy.html?location=Coastline">Coastal homes</a>
+              <a href="buy.html?location=City">City residences</a>
+              <a href="buy.html?sort=newest">New to market</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="rent.html" data-nav="rent">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html" data-nav="sell">Sell</a></li>
+          <li class="nav-item"><a class="nav-link" href="agents.html" data-nav="agents">Advisors</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html" data-nav="insights">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-nav="about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+15550147000">
+          <span data-icon="phone"></span>
+          +1 (555) 014-7000
+        </a>
+        <button class="icon-btn" type="button" data-favorites-open aria-label="Open your shortlist">
+          <span data-icon="heart"></span>
+          <span class="saved-count" data-favorites-count data-count="0"></span>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="contact.html">Book a consultation</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span data-icon="menu"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" data-mobile-menu aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="brand" href="index.html" aria-label="Haven Estates — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+          <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+          <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Haven Estates</span>
+          <span class="brand-sub">Private property, considered</span>
+        </span>
+      </a>
+      <button class="mobile-menu__close" type="button" data-menu-close aria-label="Close menu">
+        <span data-icon="close"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu__body">
+      <nav aria-label="Mobile">
+        <ul class="mobile-nav">
+          <li>
+            <a class="mobile-nav__link" href="buy.html">Buy <span data-icon="arrowUpRight"></span></a>
+            <ul class="mobile-nav__sub">
+              <li><a href="buy.html?location=Coastline">Coastal</a></li>
+              <li><a href="buy.html?location=City">City</a></li>
+              <li><a href="buy.html?location=Countryside">Countryside</a></li>
+              <li><a href="buy.html?sort=newest">New to market</a></li>
+            </ul>
+          </li>
+          <li><a class="mobile-nav__link" href="rent.html">Rent <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="sell.html">Sell <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="agents.html">Advisors <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="blog.html">Journal <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="about.html">About <span data-icon="arrowUpRight"></span></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <span data-icon="arrowUpRight"></span></a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__meta">
+        <a href="tel:+15550147000">+1 (555) 014-7000</a>
+        <a href="mailto:hello@havenestates.example">hello@havenestates.example</a>
+        <span>120 Alder Row, San Francisco — demonstration address</span>
+      </div>
+
+      <div class="mobile-menu__actions">
+        <a class="btn btn-light" href="contact.html">Book a consultation</a>
+        <button class="btn btn-outline-light" type="button" data-favorites-open>
+          <span data-icon="heart"></span>
+          Your shortlist (<span data-favorites-count data-count="0">0</span>)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-scrim" data-panel-scrim></div>
+
+  <aside class="favorites-panel" data-favorites-panel aria-hidden="true" aria-label="Your shortlist">
+    <div class="favorites-head">
+      <div>
+        <h2>Your shortlist</h2>
+        <p data-favorites-summary>No saved properties yet</p>
+      </div>
+      <button class="icon-btn" type="button" data-favorites-close aria-label="Close shortlist">
+        <span data-icon="close"></span>
+      </button>
+    </div>
+    <div class="favorites-body">
+      <ul class="favorites-list" data-favorites-list></ul>
+    </div>
+    <div class="favorites-foot" data-favorites-footer hidden>
+      <div class="grid gap-2">
+        <a class="btn btn-primary btn-block" href="buy.html?saved=1">Saved homes</a>
+        <a class="btn btn-outline btn-block" href="rent.html?saved=1">Saved rentals</a>
+      </div>
+      <p class="form-note mt-3"><span data-icon="info"></span> Shortlists are stored only in this browser.</p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img src="assets/images/hero/blog.jpg" alt="Person signing a document with a pen" width="2000" height="1100" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="page-hero__shade"></div>
+      <div class="container-haven page-hero__content">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span data-icon="chevronRight"></span>
+          <span aria-current="page">Journal</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">The journal</p>
+        <h1 class="h1 mt-4">Notes on living well, thoughtfully.</h1>
+        <p class="page-hero__intro">Practical thinking on buying, selling, renting and the spaces in between — written to be useful long after the move is done.</p>
+        <div class="page-hero__meta">
+          <span><strong>8</strong> stories</span>
+          <span><strong>5</strong> categories</span>
+          <span>Illustrative editorial</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container-haven">
+        <noscript>
+          <p class="form-status form-status--error is-visible" role="alert">
+            <span>JavaScript is required to browse and search this demonstration journal. The articles are illustrative.</span>
+          </p>
+        </noscript>
+
+        <div class="blog-featured" data-blog-featured></div>
+
+        <div class="section-head">
+          <div class="section-head__text">
+            <p class="eyebrow">All stories</p>
+            <h2 class="h2">The full archive.</h2>
+            <p>Search by subject, filter by category, or read straight through. Every article is fictional editorial written for this demonstration.</p>
+          </div>
+          <p class="results-count" data-blog-count aria-live="polite">Loading stories…</p>
+        </div>
+
+        <div class="blog-toolbar">
+          <div class="blog-search">
+            <span data-icon="search"></span>
+            <label class="sr-only" for="blog-search">Search the journal</label>
+            <input class="input" id="blog-search" type="search" placeholder="Search stories" autocomplete="off" data-blog-search>
+          </div>
+          <div class="blog-categories" data-blog-categories role="group" aria-label="Filter stories by category"></div>
+        </div>
+
+        <div class="post-grid" data-blog-grid></div>
+
+        <div class="listing-empty" data-blog-empty>
+          <span data-icon="search"></span>
+          <h3>No stories match that search</h3>
+          <p>Try a different phrase or clear the category filter.</p>
+          <button class="btn btn-outline" type="button" data-blog-reset>Show all stories</button>
+        </div>
+
+        <div class="load-more-wrap" data-blog-load-more-wrap>
+          <button class="btn btn-outline" type="button" data-blog-load-more>Load more stories <span data-icon="arrowRight"></span></button>
+          <p class="load-more-note" data-blog-note></p>
+        </div>
+
+        <p class="form-note mt-6"><span data-icon="info"></span> The Haven Journal is illustrative editorial. Market observations and figures are written for demonstration and are not advice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-haven">
+        <div class="newsletter">
+          <div class="newsletter__grid">
+            <div>
+              <p class="eyebrow eyebrow--light">The Haven letter</p>
+              <h2 class="h2">A monthly note on<br>places worth knowing.</h2>
+              <p>New collections, considered interiors and the occasional market observation. No noise.</p>
+            </div>
+            <div class="newsletter__form-wrap">
+              <form class="newsletter-form" data-newsletter-form novalidate>
+                <label class="sr-only" for="newsletter-blog-email">Email address</label>
+                <input id="newsletter-blog-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+                <button type="submit" aria-label="Subscribe to the Haven letter"><span data-icon="arrowRight"></span></button>
+              </form>
+              <div class="form-status" data-newsletter-status tabindex="-1" role="status"></div>
+              <p class="form-note"><span data-icon="info"></span> Front-end demo only. Your address is not sent or stored.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main container-haven">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Haven Estates — home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+            <path d="M5 33V17.4L20 5l15 12.4V33" stroke="currentColor" stroke-width="1.35"/>
+            <path d="M12.4 33V22.2L20 16l7.6 6.2V33" stroke="currentColor" stroke-width="1.1" opacity=".62"/>
+            <path d="M17 33v-7.2h6V33" stroke="currentColor" stroke-width="1.1"/>
+            <path d="M9.5 33h21" stroke="currentColor" stroke-width="1.35"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Haven Estates</span>
+            <span class="brand-sub">Private property, considered</span>
+          </span>
+        </a>
+        <p>A fictional boutique agency created to demonstrate considered real-estate design, editorial storytelling and careful search.</p>
+        <p class="footer-disclaimer">Demonstration project only. Every property, advisor, statistic, testimonial and contact detail is fictional or uses reserved example addresses.</p>
+        <div class="footer-contact">
+          <a href="tel:+15550147000"><span data-icon="phone"></span> +1 (555) 014-7000</a>
+          <a href="mailto:hello@havenestates.example"><span data-icon="mail"></span> hello@havenestates.example</a>
+          <a href="contact.html"><span data-icon="mapPin"></span> 120 Alder Row, San Francisco</a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+          <li><a href="buy.html">Homes for sale</a></li>
+          <li><a href="rent.html">Homes for rent</a></li>
+          <li><a href="sell.html">Sell with Haven</a></li>
+          <li><a href="agents.html">Our advisors</a></li>
+          <li><a href="blog.html">The journal</a></li>
+          <li><a href="about.html">Our story</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Services</h2>
+        <ul class="footer-links">
+          <li><a href="contact.html">Buyer representation</a></li>
+          <li><a href="sell.html">Property valuation</a></li>
+          <li><a href="rent.html">Rental search</a></li>
+          <li><a href="contact.html">Relocation support</a></li>
+          <li><a href="agents.html">Meet the team</a></li>
+          <li><a href="contact.html">General enquiry</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Visit</h2>
+        <p class="footer-address">120 Alder Row, Suite 4<br>San Francisco, CA 94110<br>Demonstration address</p>
+        <div class="footer-hours">
+          <div><span>Mon – Fri</span><span>9:00 – 18:00</span></div>
+          <div><span>Saturday</span><span>10:00 – 16:00</span></div>
+          <div><span>Sunday</span><span>By appointment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal container-haven">
+      <p>© 2026 Haven Estates. Static front-end demonstration. Forms validate in the browser and do not send or store data. No real listings or identities are represented.</p>
+      <p><a href="contact.html">Contact</a> · <a href="about.html#disclaimer">Disclaimer</a></p>
+    </div>
+
+    <div class="footer-wordmark" aria-hidden="true">
+      <span>Haven Estates</span>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite">
+    <span data-icon="checkCircle"></span>
+    <span data-toast-message></span>
+  </div>
+
+  <script defer src="js/properties-data.js"></script>
+  <script defer src="js/blog-data.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/filters.js"></script>
+  <script defer src="js/navigation.js"></script>
+  <script defer src="js/favorites.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/forms.js"></script>
+  <script defer src="js/blog.js"></script>
+</body>
+</html>
